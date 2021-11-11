@@ -29,9 +29,9 @@
 						body: JSON.stringify(data)
 					};
 					const response = await fetch('/api', options);
-					const data = await response.json();
+					const json = await response.json();
 
-					console.log(data);
+					console.log(json);
 
 				});
 			}else{
